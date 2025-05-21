@@ -20,7 +20,7 @@ def category_detail(request, category_id):
     # Отримуємо категорії за ID
     category = get_object_or_404(RecipeCategory, id=category_id)
     
-    # Отримуэмо усы рецепти з категорыъ
+    # Отримуэмо усі рецепти з категорії
     recipes = Recipe.objects.filter(category=category)
     
     # Передаємо дані
