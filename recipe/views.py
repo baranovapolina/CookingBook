@@ -2,6 +2,7 @@ import random
 from django.shortcuts import render
 from .models import Recipe
 
+
 def main(request):
     # Отримуємо усі рецепти
     recipes = list(Recipe.objects.all())
@@ -14,7 +15,7 @@ def main(request):
 
 
 from django.shortcuts import render, get_object_or_404
-from .models import Recipe, RecipeCategory
+from .models import Recipe, Category
 
 def category_detail(request, category_id):
     # Отримуємо категорії за ID
